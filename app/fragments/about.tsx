@@ -1,6 +1,6 @@
 import { subtitle } from "@/components/primitives";
 
-export default function AboutFragment() {
+export const AboutFragment = () => {
     return (
         <div id="acerca" className="mx-auto max-w-4xl px-6">
             <h2 className={subtitle()}>Acerca</h2>

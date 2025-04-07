@@ -2,7 +2,7 @@ import { Card, CardBody, CardHeader } from "@heroui/card";
 import Image from "next/image";
 import { subtitle } from "@/components/primitives";
 
-export default function ExperienceFragment() {
+export const ExperienceFragment = () => {
     return (
         <div className="mx-auto max-w-4xl px-6">
             <h2 className={subtitle()}>Experiencia</h2>
