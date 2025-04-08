@@ -33,7 +33,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <CodeIcon color="white"/>
+            <CodeIcon color="white" />
             <p className="font-bold text-inherit">Desarrollador</p>
           </NextLink>
         </NavbarBrand>
@@ -65,17 +65,17 @@ export const Navbar = () => {
             <GithubIcon className="text-white" />
           </Link>
           <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
-            <LinkedinIcon className=""/>
+            <LinkedinIcon className="" />
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-      <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-white" />
-          </Link>
-          <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
-            <LinkedinIcon className=""/>
-          </Link>
+        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+          <GithubIcon className="text-white" />
+        </Link>
+        <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
+          <LinkedinIcon className="" />
+        </Link>
         {/* <ThemeSwitch /> */}
         <NavbarMenuToggle />
       </NavbarContent>
@@ -86,7 +86,7 @@ export const Navbar = () => {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color={"foreground"}
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}
